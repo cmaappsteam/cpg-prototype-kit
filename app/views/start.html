@@ -1,0 +1,125 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Section</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Subsection</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Contact the Competition and Markets Authority
+      </h1>
+
+      <p>Use this service to tell the Competition and Markets Authority (CMA) about issues with a business,
+        inquire about an investigation or provide information and evidence.
+      </p>
+
+      <!--<ul class="govuk-list govuk-list--bullet">
+        <li>do something</li>
+        <li>update your name, address or other details</li>
+        <li>do something else</li>
+      </ul>-->
+
+      <p>Do not use this service if you're seeking immediate advice and support. <a href="#">Contact the relevant consumer advice organisation in your area</a></p>
+
+      <p>The information you provide will help the CMA to prioritise its action against possible breaches of competition or consuler law</p>
+      
+      <h2 class="govuk-heading-m">
+        Information you will need to provide
+      </h2>
+
+      <p>You will be asked to provide:</p>
+
+      <ul class="govuk-list govuk-list--number">
+        <li>a description of the issues, including its impact</li>
+        <li>Any supporting evidence you have</li>
+        <li>details about yourself and, if applicable, your organisation</li>
+      </ul>
+
+      <a href="/what-are-you-reporting" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button">
+        Start now
+        <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" aria-hidden="true" focusable="false">
+          <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path>
+        </svg>
+      </a>
+
+      <p>The information you share with us will be used by the CMA and other organisations, to monitor and possibly 
+        take action to stop unfair business behaviour.</p>
+
+      <p>As part of your report, you can choose to provide contact details to the CMA</p>
+
+      <p>If you provide these details, the CMA will be processing your personal data. 'Personal data' is information which relates to 
+        an individual who can be identified from it</p>
+
+      <p>We take anonymity seriously, and more information about how we handle complaints and anonymous reports can bbe found in
+        <a href="#">our confidentiality statement</a>
+      </p>
+
+
+      <!--
+      <h2 class="govuk-heading-m">Before you start</h2>
+
+      <p>You can also <a href="#">register by post</a>.</p>
+
+      <p>The online service is also <a href="#">available in Welsh (ar gael yn Gymraeg)</a>.</p>
+
+      <p>You can’t register for this service if you’re in the UK illegally.</p>-->
+
+
+    </div>
+
+      <!--
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Subsection
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="#">
+                Related link
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Related link
+              </a>
+            </li>
+            <li>
+              <a href="#" class="govuk-!-font-weight-bold">
+                More <span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+    !-->
+  </div>
+{% endblock %}

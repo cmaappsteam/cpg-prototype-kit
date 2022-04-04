@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Report businesses agreeing not to compete with each other
+      </h1>
+
+      <p>A <a href="#">business cartel</a> occurs when 2 or more businesses agree that they wwill not compete
+        with each other></p>
+      
+        <p>This may include:</p>
+
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Fixing prices</li>
+          <li>Agreeing not to compete for jobs (bid-rigging)</li>
+          <li>Sharing markets (for example, by geographical area)</li>
+          <li>Sharing sensitive operational information between businesses</li>
+        </ul>
+        
+        <p>You can report cartel information to us using the dedicated <a href="#">online reporting form</a></p>
+
+        <p>You may be eligible for a financial reward if you give us information that leads to an investigation, for more information
+          read <a href="#">Cartels: policy for witnessing and reporting.</a></p>
+      
+
+          <h2 class="govuk-heading-m">Apply for leniency</h2>
+
+         <p>If you or your company has been involved in a cartel, you may be able to <a href="#">apply for leniency</a></p> 
+
+    </div>
+  </div>
+
+{% endblock %}

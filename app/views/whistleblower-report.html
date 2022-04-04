@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Whistleblowing
+      </h1>
+
+      <p>Whistle-blowers are employees, or former employees, that report illegal activities carried out by the 
+        business or organisation they're employed by</p>
+
+      <p>If the illegal activity relates to the sale of products, the supply of services or about competition 
+        affecting markets in the UK, it's important you report it to the CMA
+      </p>
+
+      <p>You can email: <a href="mailto:whistleblower@cma.gov.uk">whistleblower@cma.gov.uk</a></p>
+
+      <p><a href="#">Find out more about whistle-blowing</a> and what it means to be a whistle-blower, including your rights and how the CMA will protect your identity</p>
+
+      
+
+    </div>
+  </div>
+
+{% endblock %}

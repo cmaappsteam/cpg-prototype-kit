@@ -1,0 +1,71 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <!--<h1 class="govuk-heading-xl">What are you reporting to the CMA?</h1>-->
+
+      <form class="form" action="/what-are-you-reporting-answer" method="post">
+
+        {% from "govuk/components/radios/macro.njk" import govukRadios %}
+
+{{ govukRadios({
+  idPrefix: "what-are-you-reporting",
+  name: "what-are-you-reporting",
+          fieldset: {
+            legend: {
+              text: "What are you reporting to the CMA?",
+              isPageHeading: true,
+              classes: "govuk-fieldset__legend--l"
+            }
+          },
+          items: [
+            {
+              value: "A problem with a business",
+              text: "A problem with a business"
+            },
+            {
+              value: "Issues in a sector",
+              text: "Issues in a sector"
+            },
+            {
+              value: "Businesses agreeing to not compete with each other",
+              text: "Businesses agreeing to not compete with each other"
+            },
+            {
+              value: "Information or evidence related to an ongoing investigation",
+              text: "Information or evidence related to an ongoing investigation"
+            },
+            {
+              value: "Issues with a business I work or worked with (whistleblowing)",
+              text: "Issues with a business I work or worked with (whistleblowing)"
+            },
+            {
+              value: "Something I have already told you",
+              text: "Something I have already told you"
+            },
+            {
+              value: "Something else",
+              text: "Something else"
+            }
+          ]
+        }) }}
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}

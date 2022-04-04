@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <!--<h1 class="govuk-heading-xl">Heading or question goes here</h1>-->
+
+      <form class="form" action="/url/of/next/page" method="post">
+
+        <div class="govuk-form-group">
+          <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="event-name">
+              Which investigation are you telling us about?
+            </label>
+          </h1>
+          <div class="govuk-inset-text">
+            You can find the latest information about the CMA's ongoing and closed cases on <a href="#">case finder</a>
+          </div>
+          <p>Name of CAM Investigation</p>
+          <input class="govuk-input" id="event-name" name="event-name" type="text">
+        </div>
+        
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}
