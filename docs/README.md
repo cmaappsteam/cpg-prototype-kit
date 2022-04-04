@@ -4,3 +4,4 @@
 
 Documentation is also available when running the app locally at http:localhost:3000/docs
 
+Using the GDS Kit to prototype for the CMA Public Gateway Project (CPG)
